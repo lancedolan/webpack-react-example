@@ -32,6 +32,7 @@ significantly.
 webpack-react-skeleton/
 ├─ app/                     # All source which compose this frontend app, uncompiled/unprocessed
 │  ├─ html/                 # HTML - react apps will be initialized on some of these pages
+│  │                        #    Note: script tags will be injected to the <head> at build time
 │  ├─ js/                   # JavaScript applications which can be initialized and run on html pages
 │  │  ├─ components/        # React components
 │  │  ├─ page-components/   # The root React components which render themselves onto a DOM element
