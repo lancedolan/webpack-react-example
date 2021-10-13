@@ -29,8 +29,8 @@ requires data from services, those services must be built in a separate codebase
 significantly.
 
 ```
-webpack-example/
-├─ app/                     # All source which composes this frontend app, uncompiled/processed
+webpack-react-skeleton/
+├─ app/                     # All source which compose this frontend app, uncompiled/unprocessed
 │  ├─ html/                 # HTML - react apps will be initialized on some of these pages
 │  ├─ js/                   # JavaScript applications which can be initialized and run on html pages
 │  │  ├─ components/        # React components
