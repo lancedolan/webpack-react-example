@@ -27,6 +27,7 @@ The following is already setup and ready for you to take advantage of.
 There is no backend in this repo. Therefore, the app directory captures a purely frontend application. If this app ever
 requires data from services, those services must be built in a separate codebase.
 
+```
 webpack-example/
 ├─ app/                     # All source which composes this frontend app, uncompiled/processed
 │  ├─ html/                 # HTML - react apps will be initialized on some of these pages
@@ -35,3 +36,5 @@ webpack-example/
 │  │  ├─ page-components/   # The root React components which render themselves onto a DOM element
 ├─ test/                    # Unit Tests (run with `npm run test`)
 ├─ dist/                    # Build output. These are the fully processed HTML & assets, ready to be served to browsers.
+```
+
