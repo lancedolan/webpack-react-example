@@ -36,6 +36,6 @@ webpack-example/
 │  │  ├─ components/        # React components
 │  │  ├─ page-components/   # The root React components which render themselves onto a DOM element
 ├─ test/                    # Unit Tests (run with `npm run test`)
-├─ dist/                    # Build output. These are the fully processed HTML & assets, ready to be served to browsers.
+├─ dist/                    # Build output. Fully processed HTML & assets, ready to be served.
 ```
 
