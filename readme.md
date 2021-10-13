@@ -1,7 +1,7 @@
 # Purpose
 
-This repo is a starting point (eg. project skeleton) for purely client-side-rendered apps using webpack. If starting a
-new project, simply fork this repo and begin development.
+This repo is a starting point (eg. project skeleton) for purely client-side-rendered apps using webpack and react. If starting a
+new project, simply click "Use This Template" above, or fork this repo, and begin development.
 
 # Features
 
