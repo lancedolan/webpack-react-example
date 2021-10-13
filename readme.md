@@ -24,7 +24,7 @@ The following is already setup and ready for you to take advantage of.
 
 # Project Structure
 
-There is no backend in this repo. Therefore, the app directory captures a purely frontend application. If this app ever
+There is no backend in this repo. Therefore, the `app` directory captures a purely frontend application. If this app ever
 requires data from services, those services must be built in a separate codebase.
 
 ```
