@@ -14,10 +14,10 @@ The following is already setup and ready for you to take advantage of.
 - Unit Tests (jest)
 - Webpack
   - Separate bundles per webpage. Allows for multiple "SPA" pages per application.
-- Sourcemaps
 - Babel es5 pre-processing
 - React JSX pre-processing
 - SCSS pre-processing
+- Sourcemaps (dev env only)
 - TODO: Twitter Bootstrap
 
 # Getting Started
