@@ -1,7 +1,11 @@
 # Purpose
 
-This repo is a starting point (eg. project skeleton) for purely client-side-rendered apps using webpack and react. If starting a
-new project, simply click "Use This Template" above, or fork this repo, and begin development.
+Project skeleton for purely client-side-rendered apps using webpack and react. If 
+starting a new project, simply click "Use This Template" above, or fork this repo, 
+and begin development.
+
+This serves as a starting point for my personal projects which share a common tech
+stack, but probably won't be highly useful to devs/orgs beyond myself.
 
 # Features
 
@@ -13,6 +17,7 @@ The following is already setup and ready for you to take advantage of.
 - Babel es5 pre-processing
 - React JSX pre-processing
 - SCSS pre-processing
+- TODO: Twitter Bootstrap
 
 # Getting Started
 
