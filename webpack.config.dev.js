@@ -5,16 +5,10 @@ module.exports = {
     target: ['web', 'es5'],
     entry: {
         index: {
-            import: './app/js/page-components/index.js'
+            import: './app/js/page-initializers/index.js'
         },
-        another: {
-            import: './app/js/page-components/another.js'
-        },
-        components: {
-            import: './app/js/page-components/components.js'
-        },
-        reactOnly: {
-            import: './app/js/page-components/reactOnly.js'
+        noReact: {
+            import: './app/js/page-initializers/no-react.js'
         }
     },
     output: {
@@ -56,32 +50,28 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/i,
                 use: ["style-loader", "css-loader", "sass-loader"]
+            },      {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
             },
+            {
+                test: /\.(html)$/,
+                use: ['html-loader']
+            }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Index',
+            title: 'Bootstrap No React',
+            template: "./app/html/no-react.html",
+            chunks: ['noReact'],
+            filename: "no-react.html",
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Bootstrap React',
             template: "./app/html/index.html",
             chunks: ['index'],
-        }),
-        new HtmlWebpackPlugin({
-            title: 'Another',
-            template: "./app/html/another.html",
-            chunks: ['another'],
-            filename: "another.html",
-        }),
-        new HtmlWebpackPlugin({
-            title: 'Components',
-            template: "./app/html/components.html",
-            chunks: ['components'],
-            filename: "components.html",
-        }),
-        new HtmlWebpackPlugin({
-            title: 'React Only',
-            template: "./app/html/react-only.html",
-            chunks: ['reactOnly'],
-            filename: "react-only.html",
+            filename: "index.html",
         })
     ],
     // If codebase grows, `eval` should give better build times but you'll lose "original lines" in browser,

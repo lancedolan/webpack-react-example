@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BootstrapReactPage should match snapshot 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand-lg navbar-light bg-light"
+  >
+    <div
+      className="container-fluid"
+    >
+      <a
+        className="navbar-brand"
+        href="#"
+      >
+        <img
+          alt=""
+          className="d-inline-block align-text-top"
+          height="24"
+          src={Object {}}
+          width="24"
+        />
+         My App
+      </a>
+      <button
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        className="navbar-toggler"
+        data-bs-target="#navbarSupportedContent"
+        data-bs-toggle="collapse"
+        type="button"
+      >
+        <span
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        className="collapse navbar-collapse"
+        id="navbarSupportedContent"
+      >
+        <ul
+          className="navbar-nav me-auto mb-2 mb-lg-0"
+        >
+          <li
+            className="nav-item"
+          >
+            <a
+              aria-current="page"
+              className="nav-link active"
+              href="./bootstrap-react.html"
+            >
+              React Page
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              href="./bootstrap.html"
+            >
+              Vanilla JS Page
+            </a>
+          </li>
+          <li
+            className="nav-item dropdown"
+          >
+            <a
+              aria-expanded="false"
+              className="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+            >
+              Dropdown
+            </a>
+            <ul
+              aria-labelledby="navbarDropdown"
+              className="dropdown-menu"
+            >
+              <li>
+                <a
+                  className="dropdown-item"
+                  href="#"
+                >
+                  Do nothing
+                </a>
+              </li>
+              <li>
+                <a
+                  className="dropdown-item"
+                  href="#"
+                >
+                  Do more nothing
+                </a>
+              </li>
+              <li>
+                <hr
+                  className="dropdown-divider"
+                />
+              </li>
+              <li>
+                <a
+                  className="dropdown-item"
+                  href="#"
+                >
+                  Do most nothing
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="container"
+    style={
+      Object {
+        "marginTop": "4em",
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <div
+          className="d-grid gap-2 col-6 mx-auto"
+        >
+          <button
+            className="btn btn-primary"
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              I've never been clicked!
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
