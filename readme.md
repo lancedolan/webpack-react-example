@@ -20,6 +20,7 @@ The following is already setup and ready for you to take advantage of.
 - SCSS pre-processing
 - Sourcemaps (dev env only)
 - Twitter Bootstrap
+  - TODO: Rebuild source to allow color/theme editing, rather than importing processed/minified
 
 # Getting Started
 
