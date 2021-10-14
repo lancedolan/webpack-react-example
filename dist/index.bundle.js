@@ -3125,14 +3125,17 @@ function within(min, value, max) {
 
 /***/ }),
 
-/***/ "./app/js/page-components/BootstrapReactPage.js":
-/*!******************************************************!*\
-  !*** ./app/js/page-components/BootstrapReactPage.js ***!
-  \******************************************************/
+/***/ "./app/js/components/ClickCountButton.js":
+/*!***********************************************!*\
+  !*** ./app/js/components/ClickCountButton.js ***!
+  \***********************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ ClickCountButton; }
+/* harmony export */ });
 /* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
 /* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
@@ -3155,7 +3158,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
-/* harmony import */ var _asset_circle_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../asset/circle.png */ "./app/asset/circle.png");
 
 
 
@@ -3181,29 +3183,53 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-
-
-function BootstrapReactPage(props) {
+function ClickCountButton() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_10__.useState)(0),
       _useState2 = _slicedToArray(_useState, 2),
       clicks = _useState2[0],
       setClicks = _useState2[1];
 
-  var nav = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("nav", {
-    className: "navbar navbar-expand-lg navbar-light bg-light",
-    key: "1"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("button", {
+    className: "btn btn-primary",
+    type: "button",
+    onClick: function onClick() {
+      setClicks(clicks + 1);
+    }
+  }, clicks < 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("span", null, "I've never been clicked!"), clicks >= 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("span", null, "I've been clicked ", clicks, " time", clicks == 1 ? '' : 's'));
+}
+
+/***/ }),
+
+/***/ "./app/js/components/NavBar.js":
+/*!*************************************!*\
+  !*** ./app/js/components/NavBar.js ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ NavBar; }
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _asset_circle_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../asset/circle.png */ "./app/asset/circle.png");
+
+
+function NavBar() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", {
+    className: "navbar navbar-expand-lg navbar-light bg-light"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "container-fluid"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("a", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     className: "navbar-brand",
     href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("img", {
-    src: _asset_circle_png__WEBPACK_IMPORTED_MODULE_12__,
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: _asset_circle_png__WEBPACK_IMPORTED_MODULE_1__,
     alt: "",
     width: "24",
     height: "24",
     className: "d-inline-block align-text-top"
-  }), " My App"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("button", {
+  }), " My App"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "navbar-toggler",
     type: "button",
     "data-bs-toggle": "collapse",
@@ -3211,68 +3237,84 @@ function BootstrapReactPage(props) {
     "aria-controls": "navbarSupportedContent",
     "aria-expanded": "false",
     "aria-label": "Toggle navigation"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("span", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
     className: "navbar-toggler-icon"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "collapse navbar-collapse",
     id: "navbarSupportedContent"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("ul", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
     className: "navbar-nav me-auto mb-2 mb-lg-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("li", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
     className: "nav-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("a", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     className: "nav-link active",
     "aria-current": "page",
     href: "./index.html"
-  }, "React Page")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("li", {
+  }, "React Page")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
     className: "nav-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("a", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     className: "nav-link",
     href: "./no-react.html"
-  }, "Vanilla JS Page")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("li", {
+  }, "Vanilla JS Page")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
     className: "nav-item dropdown"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("a", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     className: "nav-link dropdown-toggle",
     href: "#",
     id: "navbarDropdown",
     role: "button",
     "data-bs-toggle": "dropdown",
     "aria-expanded": "false"
-  }, "Dropdown"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("ul", {
+  }, "Dropdown"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
     className: "dropdown-menu",
     "aria-labelledby": "navbarDropdown"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("a", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     className: "dropdown-item",
     href: "#"
-  }, "Do nothing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("a", {
+  }, "Do nothing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     className: "dropdown-item",
     href: "#"
-  }, "Do more nothing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("hr", {
+  }, "Do more nothing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", {
     className: "dropdown-divider"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("a", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     className: "dropdown-item",
     href: "#"
   }, "Do most nothing"))))))));
-  var container = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("div", {
+}
+
+/***/ }),
+
+/***/ "./app/js/page-components/BootstrapReactPage.js":
+/*!******************************************************!*\
+  !*** ./app/js/page-components/BootstrapReactPage.js ***!
+  \******************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/NavBar */ "./app/js/components/NavBar.js");
+/* harmony import */ var _components_ClickCountButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/ClickCountButton */ "./app/js/components/ClickCountButton.js");
+
+
+
+
+function BootstrapReactPage(props) {
+  var container = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "container",
     style: {
       marginTop: '4em'
     },
     key: "2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "col"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "d-grid gap-2 col-6 mx-auto"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("button", {
-    className: "btn btn-primary",
-    type: "button",
-    onClick: function onClick() {
-      setClicks(clicks + 1);
-    }
-  }, clicks < 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("span", null, "I've never been clicked!"), clicks >= 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10__.createElement("span", null, "I've been clicked ", clicks, " time", clicks == 1 ? '' : 's'))))));
-  return [nav, container];
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_ClickCountButton__WEBPACK_IMPORTED_MODULE_2__["default"], null)))));
+  return [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    key: "1"
+  }), container];
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (BootstrapReactPage);

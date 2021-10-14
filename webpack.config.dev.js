@@ -1,16 +1,32 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+/**
+ * Canonical list of all entrypoint pages in the entire app.
+ * These strings will be used for all html & js files associated with them, as well as any config IDs within this file.
+ * @type {string[]}
+ */
+const pages = ['index','no-react']
+
+const ENTRY_IMPORT_PREFIX = './app/js/page-initializers/';
+const HTML_PLUGINS_IMPORT_PREFIX = './app/html/';
+const entries = {}
+pages.forEach( page =>
+    entries[page] = {
+        import: ENTRY_IMPORT_PREFIX + page + '.js'
+    }
+)
+const plugins = pages.map(page=>{
+    return new HtmlWebpackPlugin({
+        template: HTML_PLUGINS_IMPORT_PREFIX + page + ".html",
+        chunks: [page],
+        filename: page +".html",
+    })
+})
+
 module.exports = {
     mode: "development",
     target: ['web', 'es5'],
-    entry: {
-        index: {
-            import: './app/js/page-initializers/index.js'
-        },
-        noReact: {
-            import: './app/js/page-initializers/no-react.js'
-        }
-    },
+    entry: entries,
     output: {
         filename: '[name].bundle.js',
         clean: true
@@ -60,20 +76,7 @@ module.exports = {
             }
         ]
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            title: 'Bootstrap No React',
-            template: "./app/html/no-react.html",
-            chunks: ['noReact'],
-            filename: "no-react.html",
-        }),
-        new HtmlWebpackPlugin({
-            title: 'Bootstrap React',
-            template: "./app/html/index.html",
-            chunks: ['index'],
-            filename: "index.html",
-        })
-    ],
+    plugins: plugins,
     // If codebase grows, `eval` should give better build times but you'll lose "original lines" in browser,
     // only the file name and line number will be correct.
     // devtool: 'eval-cheap-module-source-map',

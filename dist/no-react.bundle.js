@@ -13311,7 +13311,7 @@ var now = function() {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"noReact": 0
+/******/ 			"no-react": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -13350,4 +13350,4 @@ customElements.define('list-of-lists', _components_ListOfLists__WEBPACK_IMPORTED
 }();
 /******/ })()
 ;
-//# sourceMappingURL=noReact.bundle.js.map
+//# sourceMappingURL=no-react.bundle.js.map
