@@ -27,12 +27,12 @@ export default function NavBar() {
                             Dropdown
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a className="dropdown-item" href="#">Do nothing</a></li>
-                            <li><a className="dropdown-item" href="#">Do more nothing</a></li>
+                            <li><a className="dropdown-item" href="#">Dummy Link 1</a></li>
+                            <li><a className="dropdown-item" href="#">Dummy Link 2</a></li>
                             <li>
                                 <hr className="dropdown-divider" />
                             </li>
-                            <li><a className="dropdown-item" href="#">Do most nothing</a></li>
+                            <li><a className="dropdown-item" href="#">Truly Dumb Link</a></li>
                         </ul>
                     </li>
                 </ul>
