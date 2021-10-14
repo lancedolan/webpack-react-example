@@ -42,7 +42,9 @@ webpack-react-skeleton/
 │  │                        #    Note: script tags will be injected to the <head> at build time
 │  ├─ js/                   # JavaScript applications which can be initialized and run on html pages
 │  │  ├─ components/        # React components
-│  │  ├─ page-components/   # The root React components which render themselves onto a DOM element
+│  │  ├─ page-components/   # React components intended to represent an entire page
+│  │                        #    Note: these always exist at the top level
+│  │  ├─ page-initializers/ # Page-level code which renders some page component onto a DOM element
 ├─ test/                    # Unit Tests (run with `npm run test`)
 ├─ dist/                    # Build output. Fully processed HTML & assets, ready to be served.
 ```
