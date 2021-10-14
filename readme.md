@@ -4,8 +4,9 @@ Project skeleton for purely client-side-rendered apps using webpack and react. I
 starting a new project, simply click "Use This Template" above, or fork this repo, 
 and begin development.
 
-This serves as a starting point for my personal projects which share a common tech
-stack, but probably won't be highly useful to devs/orgs beyond myself.
+This serves as starting point for my personal projects which share a common, slim 
+tech stack and a build I have complete control over; Other devs will find more use 
+in a fully-featured solution like [CRA](https://create-react-app.dev/)
 
 # Features
 
@@ -18,7 +19,7 @@ The following is already setup and ready for you to take advantage of.
 - React JSX pre-processing
 - SCSS pre-processing
 - Sourcemaps (dev env only)
-- TODO: Twitter Bootstrap
+- Twitter Bootstrap
 
 # Getting Started
 
