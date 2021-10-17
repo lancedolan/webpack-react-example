@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
+import '../../css/bootstrap-customized.scss'
 import React from 'react'
 import ReactDOM from 'react-dom';
 import BootstrapReactPage from "../page-components/BootstrapReactPage";

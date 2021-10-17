@@ -1,5 +1,7 @@
 import React from "react";
 import Circle from "../../asset/circle.png";
+import {Dropdown} from 'bootstrap/js/dist/dropdown';
+import {Collapse} from 'bootstrap/js/dist/collapse';
 
 export default function NavBar() {
     return <nav className="navbar navbar-expand-lg navbar-light bg-light" >

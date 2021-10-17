@@ -1,0 +1,14 @@
+
+// Bootstrap default variable overrides
+// You will find the complete list of Bootstrap’s variables in node_modules/bootstrap/scss/_variables.scss.
+$primary: #1b008f;
+$secondary: #888888;
+$light: #f6f6f6;
+$dark: #484848;
+//$success,
+//$info,
+//$warning,
+//$danger,
+
+// Import all of bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";

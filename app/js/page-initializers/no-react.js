@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
+import '../../css/bootstrap-customized.scss'
 import {Button} from 'bootstrap'
 import {ListOfLists} from '../components/ListOfLists'
 import Circle from '../../asset/circle.png';

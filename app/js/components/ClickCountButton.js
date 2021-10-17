@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Button} from 'bootstrap';
+import {Button} from 'bootstrap/js/dist/button';
 
 export default function ClickCountButton() {
 
