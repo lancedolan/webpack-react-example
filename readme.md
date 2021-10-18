@@ -18,12 +18,13 @@ The following is already setup and ready for you to take advantage of.
   - Mock static assets (eg. images and styles)
 - Webpack
   - Separate bundles per webpage. Allows for multiple "SPA" pages per application.
-- Babel es5 pre-processing
-- React JSX pre-processing
-- SCSS pre-processing
-- Sourcemaps (dev env only)
+  - Babel es5 pre-processing
+  - React JSX pre-processing
+  - SCSS pre-processing
+  - Sourcemaps (dev env only)
 - Twitter Bootstrap
   - Build Twitter from source, to allow for overriding/modifying.
+- npm scripts for building/testing
 
 # Getting Started
 
