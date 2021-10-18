@@ -13,6 +13,9 @@ in a fully-featured solution like [CRA](https://create-react-app.dev/)
 The following is already setup and ready for you to take advantage of.
 
 - Unit Tests (jest)
+  - Babel config separate from webpack
+  - [`jsdom`](https://www.npmjs.com/package/jsdom) for mock Browser API
+  - Mock static assets (eg. images and styles)
 - Webpack
   - Separate bundles per webpage. Allows for multiple "SPA" pages per application.
 - Babel es5 pre-processing
