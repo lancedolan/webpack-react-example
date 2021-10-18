@@ -20,7 +20,7 @@ The following is already setup and ready for you to take advantage of.
 - SCSS pre-processing
 - Sourcemaps (dev env only)
 - Twitter Bootstrap
-  - import custom build from Twitter's sourcecode, to allow for overriding/modifying.
+  - Build Twitter from source, to allow for overriding/modifying.
 
 # Getting Started
 
